@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    font-family: sans-serif;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+    width: 90vmin; /* Responsive width based on viewport */
+    height: 90vmin; /* Square container */
+    background-color: #222;
+    border: 2px solid #555;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#game-map {
+    width: 100%;
+    height: 100%;
+    background-color: #444; /* Base map color */
+}
+
+/* Base styles */
+#base-1, #base-2 {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+/* River style */
+#river {
+    filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.7));
+}
+
+/* UI Panel styles */
+#ui-panel {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    border: 1px solid #777;
+}
+
+#gold-display, #hero-health-bar {
+    display: flex;
+    align-items: center;
+}
+
+#player-gold, #hero-hp-value {
+    color: #FFD700; /* Gold color */
+    font-weight: bold;
+    margin-left: 5px;
+}
